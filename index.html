@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suryanshi Agrawal | Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Screen 1: "Who's watching?" -->
+<section id="profiles">
+  <h1>Who's watching?</h1>
+  <div class="profile-row">
+    <button class="profile" data-show="home"><span class="avatar c1">🎬</span><span>Home</span></button>
+    <button class="profile" data-show="about"><span class="avatar c2">🌿</span><span>About Me</span></button>
+    <button class="profile" data-show="education"><span class="avatar c3">🎓</span><span>Education</span></button>
+    <button class="profile" data-show="skills"><span class="avatar c4">🎨</span><span>Skills</span></button>
+    <button class="profile" data-show="experience"><span class="avatar c5">🎞️</span><span>Work</span></button>
+    <button class="profile" data-show="contact"><span class="avatar c6">✉️</span><span>Contact</span></button>
+  </div>
+  <p class="hint">Pick a profile. Sound on for the full experience.</p>
+</section>
+
+<!-- Screen 2: the logo "ta-dum" -->
+<div id="intro" class="hidden"><span class="logo-big">SURYANSHI</span></div>
+
+<!-- Screen 3: the site -->
+<div id="app" class="hidden">
+  <nav id="navbar">
+    <span class="logo">SURYANSHI</span>
+    <ul>
+      <li><a href="#" data-show="home">Home</a></li>
+      <li><a href="#" data-show="about">About Me</a></li>
+      <li><a href="#" data-show="education">Education</a></li>
+      <li><a href="#" data-show="skills">Skills</a></li>
+      <li><a href="#" data-show="experience">Work</a></li>
+      <li><a href="#" data-show="contact">Contact</a></li>
+    </ul>
+    <a href="#" id="switch" class="switch">Switch profile</a>
+  </nav>
+  <main id="stage"></main>
+  <footer>Not affiliated with Netflix. Just a fan with a CSS assignment.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
